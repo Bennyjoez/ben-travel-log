@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Plus:ital,wght@0,400;0,700;1,700&display=swap'); 
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Gentium Plus', serif;
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #F55A5A;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    box-shadow: 0px 2px 5px 5px rgb(202, 202, 202);
+}
+.heading {
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    padding-top: 50px;
+}
+
+.location  {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 5px rgb(202, 202, 202);
+}
+.cover-image {
+    margin-right: 20px;
+    margin-block: auto;
+    height: 300px;
+    width: 200px;
+    border-radius: 5px;
+}
+.destination {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 0;
+}
+.icon {
+    margin-right: 10px;
+    color: #F55A5A;
+}
+.country-name {
+    margin-right: auto;
+}
+.location-visited {
+    margin-top: 0;
+}
+.link, .learn-more {
+    text-decoration: none;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 500px) {
+    .location {
+        flex-direction: column;
+    }
+    .cover-image {
+        width: 100%;
+    }
+}
+.learn-more {
+    margin-left: 10px;
+    color: blue;
+}
