@@ -4,7 +4,14 @@ export default function Location(props) {
         let image = item.image
 
         return(
-            <img src={image} className="gallery-images" key={id}/>
+            <img src={image} id={id} className="gallery-images" key={id}/>
+        )
+    })
+    let navTags = props.gallery.map(item => {
+        let id = `#${item.id}`
+        return(
+            // <a href={id} ></a>
+            <a href={id}></a>
         )
     })
     
@@ -29,6 +36,9 @@ export default function Location(props) {
             </div>
             <div className="gallery">
                 {gallery}
+            </div>
+            <div className="gallery-nav" >
+                {navTags}
             </div>
         </div>
     )
