@@ -27,6 +27,9 @@ export default function Location(props) {
                     </div>
                     <h2 className="location-visited">{props.location}</h2>
                     <p className="description">
+                        <span className="intro">
+                            Ever been to <b>{props.location}</b>?
+                        </span> <br />
                         {props.description}
                         <span >
                             <a href={props.more} target="_blank" className="learn-more">Learn more about {props.location}</a>
