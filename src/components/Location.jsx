@@ -1,18 +1,15 @@
-import Data from "./sliderData"
-import ImageSlide from "./imageslide"
-
-
 export default function Location(props) {
-    let id;
-    let kisiiImages = Data[0].Kisii.map(item => {
-        // continue
-        console.log(item.id, item.image)
-    })
+    let gallery = props.gallery.map(item => {
+        let id = item.id
+        let image = item.image
 
-    console.log(kisiiImages)
+        return(
+            <img src={image} className="gallery-images" key={id}/>
+        )
+    })
     
     return (
-        <>
+        <div className="tile">
             <div className="location">
                 <img src={props.coverImg} alt="cover image" className="cover-image"/>
                 <div className="aside">
@@ -30,11 +27,9 @@ export default function Location(props) {
                     </p>
                 </div>
             </div>
-            <div className="slider">
-                <ImageSlide 
-
-                />
+            <div className="gallery">
+                {gallery}
             </div>
-        </>
+        </div>
     )
 }
