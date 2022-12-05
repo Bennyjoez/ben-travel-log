@@ -28,6 +28,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: antiquewhite;
+    width: 100vw;
 }
 
 .navbar {
@@ -138,5 +139,12 @@ body {
     }
     .cover-image {
         width: 100%;
+    }
+    .gallery-nav {
+        column-gap: 0.5rem;
+    }
+    .gallery-nav a {
+        width: 5px;
+        height: 5px;
     }
 }
